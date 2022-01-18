@@ -1,0 +1,17 @@
+<form method="post" #frm="ngForm" (ngSubmit)="addPost(frm)" >
+    <h1>Adicionar novo POST</h1>
+    <label>
+        <input 
+            type="text"
+            name="title" 
+            placeholder="Digite um título" 
+            [(ngModel)]="post.title" required 
+        />
+    </label>
+    <label>
+        <textarea name="body" placeholder="Digite o conteúdo do post" [(ngModel)]="post.body" required></textarea>
+    </label>
+    <button type="submit" [disabled]="frm.invalid" >add post</button>
+
+    <h4>Resposta da requisição no console</h4>
+</form>

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h4 {
+    align-self: center;
+}
+form {
+    width: 50vw;
+    margin: 0 auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+textarea {
+    resize: vertical;
+}
+input, button, textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+input, h1 {
+    margin-bottom: 1rem;
+}
+button {
+    background-color: #0000FF;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    transition: all ease .2s;
+}
+button:hover, button:focus {
+    cursor: pointer;
+    background-color: #06662b;
+}
+
+@media(max-width: 800px) {
+    form {
+        width: 100%;
+    }
+}

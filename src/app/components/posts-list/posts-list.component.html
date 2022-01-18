@@ -1,0 +1,44 @@
+<!-- <p>posts-list works!</p> -->
+<main>
+  <section  >
+    <section>
+      <div *ngFor="let item of postsList" class="post">
+        
+        <img src="../assets/images/covid.jpg" class="post--image">
+        
+        <div class="post--info">
+          <h1>{{item.title}}</h1>
+          <p>{{item.body}}</p>
+          <a routerLink="/post" [queryParams]="{id:item.id}" >Ler mais</a>
+        </div>
+        
+      </div>
+    </section>
+  </section>
+
+  <aside>
+    <div>
+      <h4>Categorias</h4>
+      <ul>
+        <li>Lorem ipsum dolor simet</li>
+        <li>Lorem ipsum dolor simet</li>
+        <li>Lorem ipsum dolor simet</li>
+        <li>Lorem ipsum dolor simet</li>
+      </ul>
+    </div>
+    <form>
+      <h4>Procurando alguma noticia?</h4>
+      <div class="search" >
+        <input type="search" placeholder="Pesquisar por..."/>
+        <button type="submit" >
+          <img src="../assets/images/icons8-search-50.png"alt="search icon"/>
+        </button>
+      </div>
+    </form> 
+
+  </aside>
+  
+</main>
+
+
+

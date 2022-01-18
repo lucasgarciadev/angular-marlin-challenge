@@ -6,6 +6,20 @@
 main {
     display: flex;
 }
+section {
+    width: 80vw;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+a {
+    color: #397FC4; font-weight: bold;
+    text-decoration: none;
+    transition: all ease .2s;
+}
+a:hover {
+    color: #FF0000;
+}
 aside {
     display: flex;
     flex-direction: column;
@@ -47,14 +61,44 @@ img {
     display: flex;
     width: 100%;
 }
+.post {
+    width: 40%; 
+    min-width: 400px;
+    margin: .5rem; 
+    border: 1px solid lightgray; 
+    border-radius: .5rem; 
+    box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.1);
+}
+.post--image {
+    width: 100%;
+    border-radius: .5rem .5rem 0 0;
+}
+.post--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+.post--info h1 {
+    text-transform: capitalize;
+}
+.post--info p {
+    margin: 1rem 0;
+    line-height: 1.5;
+    color: lightgray;
+}
+.post--info a {
+    font-weight: bold;
+    cursor: pointer;
+}
 
 @media(max-width: 1200px) {
     main {
         flex-direction: column;
     }
-    /* section {
+    section {
         width: 100vw;
-    } */
+    }
     aside {
         width: 90vw;
         padding: 2rem;
