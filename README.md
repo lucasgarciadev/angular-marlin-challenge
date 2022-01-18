@@ -1,6 +1,6 @@
 # AngularChallenge
 
-### Repositório criado coma finalidade de demonstrar conhecimentos básicos no Framework angular, assim como conhecimentos em HTML, CSS, resposividade e consumo de API REST.
+### Repositório criado com a finalidade de demonstrar conhecimentos básicos no Framework angular, assim como conhecimentos em HTML, CSS, resposividade e consumo de API REST.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
 
